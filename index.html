@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script src="script.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Básica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+    <meta name="description" content="Una página web básica con ejemplos de HTML, CSS y JavaScript.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, ejemplo, formulario">
+    <meta name="author" content="Tu Nombre">
+
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required aria-required="true">
+
+    <img src="example.jpg" loading="lazy" alt="Descripción de la imagen">
+
+    <div id="loading" style="display: none;">Enviando...</div>
+
+
+
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Inicio</h2>
+            <p>Esta es la sección de inicio.</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Un poco sobre mí.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web</p>
+    </footer>
+</body>
+</html>
